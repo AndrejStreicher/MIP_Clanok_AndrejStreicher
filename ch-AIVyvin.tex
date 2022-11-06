@@ -1,6 +1,25 @@
 \chapter{Umelá inteligencia a jej vývin}
-Umelá inteligencia ako pojem v počítačovej vede bol prvý krát predstavený na konferencií Darthmouth v roku 1956 Johnom McCarthym\cite{Corduck}. Na tejto istej konferencií debutoval prvý program, ktorý využíval automatizované uvažovanie, "Logic Theorist". Tento program bol schopný dokázať 38 z 52 matematických teorémou z knihy \textit{Principia Mathematica}. Jeden z dôkazov bol dokonca považovaný za elegantnejší než ručne vypočítaný originál z knihy. Táto konferencia sa taktiež považuje za "narodenie" umelej inteligencie ako vedy.\\Logic Theorist predstavil niekoľko konceptov ktoré sa stali kľúčovými pre výskum umelej inteligencie:\\\textbf{Vyhľadávací strom}\\
-\begin{wrapfigure}{r}{0.50\textwidth}
+Umelá inteligencia ako pojem v počítačovej vede bol prvý krát predstavený na konferencií Darthmouth v roku 1956 Johnom McCarthym. Na tejto istej konferencií debutoval prvý program, ktorý využíval automatizované uvažovanie, "Logic Theorist". Tento program bol schopný dokázať 38 z 52 matematických teorémou z knihy \textit{Principia Mathematica}. Jeden z dôkazov bol dokonca považovaný za elegantnejší než ručne vypočítaný originál z knihy\cite{Corduck}. Táto konferencia sa taktiež považuje za 'narodenie' umelej inteligencie ako vedy. Logic Theorist predstavil niekoľko konceptov ktoré sa stali kľúčovými pre výskum umelej inteligencie:
+\section{Vyhľadávací strom}
+\begin{wrapfigure}{r}{0.20\textwidth} %this figure will be at the right
     \centering
-    \includegraphics[width=0.25\textwidth]{BinarySearchTree}
-\end{wrapfigure}Logic Theorist prechádzal cez binárny vyhľadávací strom. Koreňom stromu bola počiatočná hypotéza a každá vetva bola dedukcia založená na pravidlách logiky. Cieľom programu bolo dostať sa k výroku, ktorý sa snažil dokázať. Všetky kroky, cez ktoré program prešiel tvoria dôkaz – sériu tvrdení, ktoré viedli od hypotézy k výroku, ktorý mal dokázať.\\\textbf{Heuristika}  
+    \vspace{-30pt}
+    \includegraphics[width=0.35\textwidth]{Obrázky/BinarySearchTree.png}
+    \caption{Binárny strom}
+\end{wrapfigure} 
+Logic Theorist prechádzal cez binárny vyhľadávací strom.
+Koreňom stromu bola počiatočná hypotéza a každá vetva bola dedukcia založená na pravidlách logiky. Cieľom programu bolo dostať sa k výroku, ktorý sa snažil dokázať. Všetky kroky, cez ktoré program prešiel tvoria dôkaz – sériu tvrdení, ktoré viedli od hypotézy k výroku, ktorý mal dokázať\cite{Corduck}.
+\section{Heuristika}  
+Newell a Simon\footnote{Dvaja z tvorcov Logic Theorist-a} si uvedomili, že ich vyhľadávací strom bude exponenciálne rásť a že budú potrebovať ‘orezať‘ niektoré vetvy, ktorých cesty pravdepodobne nepovedú k riešeniu. 
+
+Pravidlá tohto orezávania nazvali „heuristika“, termín ktorý bol už v matematike používaný. Heuristika sa stala dôležitou oblasťou výskumu umelej inteligencie a zostáva dôležitou metódou na prekonanie exponenciálneho rastu vyhľadávacích stromov.
+\section{Spracovanie zoznamov}
+Na implementáciu Logic Theorist-u na počítač vyvinuli jeho tvorcovia programovací jazyk IPL\footnote{Information Processing Language}, ktorý používal rovnakú formu spracovania symbolických zoznamov, ktorá neskôr tvorila základ McCarthyho programovacieho jazyka Lisp, dôležitého jazyka, ktorý stále používajú výskumníci umelej inteligencie\cite{Corduck}.
+\section*{}
+\vspace{-20pt}
+Pamela McCorduck\footnote{Spisovateľka a žurnalistka so zameraním na umelú inteligenciu} povedala o Logic Theorist-ovi: 
+
+\textit{„... bol dôkazom, že stroj môže vykonávať úlohy, ktoré sa doteraz považovali za inteligentné, kreatívne a jedinečne ľudské“}\cite{Corduck}.
+
+
+Logic Theorist predstavuje míľnik vo vývoji umelej inteligencie a nášho chápania inteligencie vo všeobecnosti.
